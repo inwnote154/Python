@@ -1,11 +1,17 @@
-#6306021620018 นายนวพรรษ นกงาม sec A
-#การบ้านข้อที่ 1 & 2
-name = input("Enter name : ")
-surname = input("Enter Surname : ")
-age = input("Enter age : ")
+chang=0
+while True:
+    if chang<0:
+        
+        qty = int(input("Enter number product : "))
+        price = float(input("Price per unit : "))
 
+        total = price*qty
+        print("Total money :",total)
 
-print("My name is "+name)
-print("My surname is "+surname )
-print("Now I\'m "+str(age) )
-print("I\'m finish undergraduate in "+str(int(age)+4)+" years old")
+        pay = float(input("Enter pay money : "))
+        change = pay - total
+        print ("Money change :",change)
+
+        print("Breaking")
+        break
+print("Finished")
